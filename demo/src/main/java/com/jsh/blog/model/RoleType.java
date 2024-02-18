@@ -1,4 +1,5 @@
-package com.jshblog.blog.model;
+package com.jsh.blog.model;
 
-public class RoleType {
+public enum RoleType {
+  USER,ADMIN
 }

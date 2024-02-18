@@ -1,4 +1,4 @@
-package com.jshblog.blog;
+package com.jsh.blog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

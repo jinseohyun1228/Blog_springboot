@@ -1,4 +1,4 @@
-package com.jshblog.blog.model;
+package com.jsh.blog.model;
 
 import javax.persistence.*;
 import lombok.AllArgsConstructor;
