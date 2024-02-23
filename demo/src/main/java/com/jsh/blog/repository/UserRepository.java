@@ -3,9 +3,13 @@ package com.jsh.blog.repository;
 import com.jsh.blog.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.Optional;
+
 //DAO 의 기능! & 자동으로 빈 등록이 된다.
 //@Repository -> 생략이 가능하다.
 public interface UserRepository extends JpaRepository<User, Integer> {//기본적인 CRUD 가능
+
+  Optional<User> findByUsername(String username);
 
 }
 

@@ -1,8 +1,11 @@
 package com.jsh.blog.config;
 
+import com.jsh.blog.config.auth.PrincipalDetailService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -13,6 +16,8 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig{ // 2. extends 제거
 
   // 3. principalDetailService 제거
+//  @Autowired
+//  private PrincipalDetailService principalDetailService;
 
   // 4. AuthenticationManager 메서드 생성
   @Bean
@@ -20,13 +25,15 @@ public class SecurityConfig{ // 2. extends 제거
     return authenticationConfiguration.getAuthenticationManager();
   }
 
-  @Bean // IoC가 되요!!
+  @Bean // IoC가 돼요!!
   public BCryptPasswordEncoder encodePWD() {
     return new BCryptPasswordEncoder();
   }
 
   // 5. 기본 패스워드 체크가 BCryptPasswordEncoder 여서 설정 필요 없음.
-
+//  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//    auth.userDetailsService(principalDetailService).passwordEncoder(encodePWD());
+//  }
 
   // 6. 최신 버전(2.7)으로 시큐리티 필터 변경
   @Bean
@@ -36,7 +43,7 @@ public class SecurityConfig{ // 2. extends 제거
 
     // 2. 인증 주소 설정
     http.authorizeRequests(
-            authorize -> authorize.antMatchers("/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**").permitAll()
+            authorize -> authorize.antMatchers("/","/auth/**", "/js/**", "/css/**", "/image/**", "/dummy/**").permitAll()
                     .anyRequest().authenticated()
     );
 
@@ -44,6 +51,7 @@ public class SecurityConfig{ // 2. extends 제거
     http.formLogin(f -> f.loginPage("/auth/loginForm")
             .loginProcessingUrl("/auth/loginProc")
             .defaultSuccessUrl("/")
+
     );
 
     return http.build();
