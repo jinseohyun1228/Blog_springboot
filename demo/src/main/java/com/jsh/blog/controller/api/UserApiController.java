@@ -1,12 +1,16 @@
 package com.jsh.blog.controller.api;
 
+import com.jsh.blog.config.auth.PrincipalDetail;
 import com.jsh.blog.dto.ResponseDto;
+import com.jsh.blog.model.Board;
 import com.jsh.blog.model.RoleType;
 import com.jsh.blog.model.User;
+import com.jsh.blog.service.BoardService;
 import com.jsh.blog.service.UserService;
 //import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +21,7 @@ public class UserApiController {
 
   @Autowired
   private UserService userService;
+
 
 //  @Autowired //스프링이 빈으로 들고있기 때문에 의존성 주입으로도 받을 수 있다.
 //  private HttpSession session;

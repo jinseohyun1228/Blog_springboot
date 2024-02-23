@@ -1,6 +1,7 @@
 package com.jsh.blog.config.auth;
 
 import com.jsh.blog.model.User;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -9,6 +10,7 @@ import java.util.Collection;
 
 //스프링 시큐리티가 로그인 요청을 가로채서 로그인을 진행하고 완료가 되면 UserDetails 타입의 오브젝트를
 //스프링 시큐리티의 고유한 세션 저장소에 저장을 해준다.
+@Getter
 public class PrincipalDetail implements UserDetails {
   private User user; //컴포지션  우리의 유저 엔티티를 이렇게 가지고 있네..? 신기하다... 그러면 앞으로는 이 PrincipalDetail를 이용해서 엔티티에 접근하는건가? 정말 신기하다묭~
 
