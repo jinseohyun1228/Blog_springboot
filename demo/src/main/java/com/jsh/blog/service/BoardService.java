@@ -24,9 +24,6 @@ public class BoardService {
     board.setCount(0);
     board.setUser(user);
     System.out.println("ItWorksUpToThisPoint");
-
-     Board board1 = new Board();
-     board1.setUser(userRepository.findById(1));
     boardRepository.save(board);
   }
 }

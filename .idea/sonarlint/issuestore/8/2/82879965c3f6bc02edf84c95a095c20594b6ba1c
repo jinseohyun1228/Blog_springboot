@@ -1,0 +1,22 @@
+
+{
+java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(«å”¼úÿÿÿÿ8Ãøö¥İ1
+]	java:S125
+"<This block of commented-out lines of code should be removed.(ÄÎòşÿÿÿÿ8Ïøö¥İ1
+]
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(ó¢ªÒ8Øøö¥İ1
+W	java:S125"<This block of commented-out lines of code should be removed.(Ù–¯Q8Øøö¥İ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÎÆµÛûÿÿÿÿ8Ùøö¥İ1
+]	java:S125&"<This block of commented-out lines of code should be removed.(¶·½Âøÿÿÿÿ8Úøö¥İ1
+a
+java:S1128"ERemove this unused import 'com.jsh.blog.config.auth.PrincipalDetail'.(˜Ææ28Õ‹ú¥İ1
+R
+java:S1128"5Remove this unused import 'com.jsh.blog.model.Board'.(èÛÂ¨8Ö‹ú¥İ1
+U
+java:S1128"8Remove this unused import 'com.jsh.blog.model.RoleType'.(³ıø8”ó÷¥İ1
+`
+java:S1128">Remove this unused import 'com.jsh.blog.service.BoardService'.(½¤öÃùÿÿÿÿ8Ö‹ú¥İ1
+~
+java:S1128"aRemove this unused import 'org.springframework.security.core.annotation.AuthenticationPrincipal'.(Øù¢8Ö‹ú¥İ1
+
+java:S1128"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8”ó÷¥İ1

@@ -1,0 +1,9 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(Ë®º¶ÿÿÿÿÿ8¼Î¢«Ü1
+]	java:S125""<This block of commented-out lines of code should be removed.(óœ™Óúÿÿÿÿ8–‡¢«Ü1
+i
+java:S1128"LRemove this unused import 'com.jsh.blog.config.auth.PrincipalDetailService'.(¼ûíì8ÍÎ¢«Ü1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ÍÎ¢«Ü1
+
+java:S1128"€Remove this unused import 'org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder'.(£ØÓ‰8 ‡¢«Ü1

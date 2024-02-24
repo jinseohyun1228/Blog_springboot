@@ -22,7 +22,7 @@ public class Board {
   private int id;
 
   @Column(nullable = false, length = 100)
-  private String titlel;
+  private String title;
 
   @Lob  //대용량 데이터
   private String content; //섬머 노트 라이브러리 <html>태그가 섞여서 디자인이 됨.
