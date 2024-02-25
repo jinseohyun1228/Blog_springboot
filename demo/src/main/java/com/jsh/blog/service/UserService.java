@@ -24,7 +24,6 @@ public class UserService {
   private BCryptPasswordEncoder encoder;
 
 
-
   @Transactional
   public void joinUser(User user) {
     String rowPassword = user.getPassword();
@@ -35,17 +34,24 @@ public class UserService {
   }
 
   @Transactional
-  public void update(User requestUser,PrincipalDetail principalDetail) {
+  public void update(User requestUser, PrincipalDetail principalDetail) {
     // 수정시에는 영속성 컨텍스트 User 오브젝트를 영속화 시키고(= select),
     // 영속화된 User 오브젝트를 수정, 영속화된 오브젝트를 변경하면 자동으로 DB에 update
 
     User principal = userRepository.findById(requestUser.getId())
-            .orElseThrow(()->{
+            .orElseThrow(() -> {
               return new IllegalArgumentException("해당 회원이 없습니다.");
             });
-    String rowPassword = requestUser.getPassword();
-    String encPassword = encoder.encode(rowPassword);
-    principal.setPassword(encPassword);
+    System.out.println("requestUser = getPassword " + requestUser.getPassword());
+    if (requestUser.getPassword() != null && !requestUser.getPassword().isEmpty()) {
+      System.out.println("changePassword o");
+      String rowPassword = requestUser.getPassword();
+      String encPassword = encoder.encode(rowPassword);
+      principal.setPassword(encPassword);
+    }else {
+      System.out.println("changePassword X");
+    }
+
     principal.setEmail(requestUser.getEmail());
 
     principalDetail.setUser(principal);

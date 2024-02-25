@@ -12,19 +12,19 @@ public class UserController {
 
   @GetMapping("/auth/joinForm")
   public String joinForm() {
-    System.out.println("goToJoiinScreen");
+//    System.out.println("goToJoiinScreen");
     return "user/joinForm";
   }
 
   @GetMapping("/auth/loginForm")
   public String loginForm() {
-    System.out.println("goToLoginScreen");
+//    System.out.println("goToLoginScreen");
     return "user/loginForm";
   }
 
   @GetMapping("/user/updateForm")
   public String updateForm() {
-    System.out.println("/user/updateForm");
+//    System.out.println("/user/updateForm");
     return "user/updateForm";
   }
 }

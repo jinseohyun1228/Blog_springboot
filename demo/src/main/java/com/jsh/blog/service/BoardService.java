@@ -28,7 +28,7 @@ public class BoardService {
   public void saveBoard(Board board,User user) {
     board.setCount(0);
     board.setUser(user);
-    System.out.println("ItWorksUpToThisPoint");
+//    System.out.println("ItWorksUpToThisPoint");
     boardRepository.save(board);
   }
 
