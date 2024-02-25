@@ -21,8 +21,6 @@ d
 4demo/src/main/java/com/jsh/blog/DemoApplication.java,3\8\38b907a7983665c57531f60851cdbcb91292aa6c
 [
 +demo/src/main/webapp/WEB-INF/views/test.jsp,a\3\a336b842c1b0e570da2fc0520f544ea123b1cd66
-d
-4demo/src/main/webapp/WEB-INF/views/user/joinForm.jsp,d\4\d42f8527f571af5e3226fdab265ec91d3b07fd69
 e
 5demo/src/main/java/com/jsh/blog/test/ConsoleTest.java,0\8\0897f973f9560fed6c1911d380e1e3f17f85e78d
 a
@@ -35,8 +33,6 @@ j
 :demo/src/main/java/com/jsh/blog/config/SecurityConfig.java,4\9\499ad01f121507755d913281e5f37abe73edfa1f
 w
 Gdemo/src/main/java/com/jsh/blog/config/auth/PrincipalDetailService.java,b\3\b3f8e9eb61edb5ef1a72323ab51638b0c972f184
-n
->demo/src/main/java/com/jsh/blog/controller/UserController.java,b\1\b15450de9622bc25229a1e3e1a039e38900ad35b
 n
 >demo/src/main/java/com/jsh/blog/repository/UserRepository.java,b\a\ba1b841d0d529068c5476dea68fc17d4cd9c1814
 u

@@ -23,10 +23,6 @@ d
 +demo/src/main/webapp/WEB-INF/views/test.jsp,a\3\a336b842c1b0e570da2fc0520f544ea123b1cd66
 <
 demo/pom.xml,f\1\f1bf400bc0784549511ea07030d3a798eb8c0511
-n
->demo/src/main/java/com/jsh/blog/controller/UserController.java,b\1\b15450de9622bc25229a1e3e1a039e38900ad35b
-d
-4demo/src/main/webapp/WEB-INF/views/user/joinForm.jsp,d\4\d42f8527f571af5e3226fdab265ec91d3b07fd69
 e
 5demo/src/main/webapp/WEB-INF/views/user/loginForm.jsp,f\8\f8f1a0afad59cb81af4ccebcfe476795c8aae3e4
 j
