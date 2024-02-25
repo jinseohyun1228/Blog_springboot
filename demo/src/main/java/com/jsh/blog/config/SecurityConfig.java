@@ -35,6 +35,7 @@ public class SecurityConfig{ // 2. extends 제거
 //    auth.userDetailsService(principalDetailService).passwordEncoder(encodePWD());
 //  }
 
+
   // 6. 최신 버전(2.7)으로 시큐리티 필터 변경
   @Bean
   SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

@@ -21,4 +21,10 @@ public class UserController {
     System.out.println("goToLoginScreen");
     return "user/loginForm";
   }
+
+  @GetMapping("/user/updateForm")
+  public String updateForm() {
+    System.out.println("/user/updateForm");
+    return "user/updateForm";
+  }
 }

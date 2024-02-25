@@ -14,6 +14,10 @@ import java.util.Collection;
 public class PrincipalDetail implements UserDetails {
   private User user; //컴포지션  우리의 유저 엔티티를 이렇게 가지고 있네..? 신기하다... 그러면 앞으로는 이 PrincipalDetail를 이용해서 엔티티에 접근하는건가? 정말 신기하다묭~
 
+  public void setUser(User user) {
+    this.user = user;
+  }
+
   public PrincipalDetail(User user) {
     this.user = user;
   }

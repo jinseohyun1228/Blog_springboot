@@ -29,14 +29,10 @@ e
 5demo/src/main/webapp/WEB-INF/views/user/loginForm.jsp,f\8\f8f1a0afad59cb81af4ccebcfe476795c8aae3e4
 <
 demo/pom.xml,f\1\f1bf400bc0784549511ea07030d3a798eb8c0511
-j
-:demo/src/main/java/com/jsh/blog/config/SecurityConfig.java,4\9\499ad01f121507755d913281e5f37abe73edfa1f
 w
 Gdemo/src/main/java/com/jsh/blog/config/auth/PrincipalDetailService.java,b\3\b3f8e9eb61edb5ef1a72323ab51638b0c972f184
 n
 >demo/src/main/java/com/jsh/blog/repository/UserRepository.java,b\a\ba1b841d0d529068c5476dea68fc17d4cd9c1814
-u
-Edemo/src/main/java/com/jsh/blog/controller/api/UserApiController.java,8\2\82879965c3f6bc02edf84c95a095c20594b6ba1c
 w
 G.idea/sonarlint/issuestore/6/c/6cd0b6649eb8c27f043341c73d87507ac238ec06,0\7\079a5ee2833ae69064dc6deed82eaee4d2f518e3
 Å
