@@ -26,12 +26,15 @@ public class User{
   @Column(nullable = false,length = 100)
   private String password;
 
-  @Column(nullable = false,length = 50)
+  @Column(length = 50)
   private String email;
 
   //  @ColumnDefault("'user'")
   @Enumerated(EnumType.STRING)
   private RoleType role;
+
+
+  private String oauth;
 
   @CreationTimestamp //시간이 자동으로 입력이 된다.
   private Timestamp createDate;

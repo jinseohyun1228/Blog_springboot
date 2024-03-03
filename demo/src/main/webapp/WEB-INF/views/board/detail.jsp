@@ -23,6 +23,18 @@
         <div>${board.content}</div>
     </div>
     <hr/>
+
+    <div>
+        <div class="card">
+            <div class="card-body"><textarea rows="1" class="form-control"></textarea></div>
+            <div class="card-footer"><button class="btn btn-info">등록</button></div>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-header">댓글 리스트</div>
+    </div>
 </div>
 <script src="/js/board.js"></script>
 <%@ include file="../layout/footer.jsp" %>

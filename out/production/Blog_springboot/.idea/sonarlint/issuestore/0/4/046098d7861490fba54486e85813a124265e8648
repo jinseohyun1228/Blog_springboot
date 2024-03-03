@@ -1,0 +1,7 @@
+
+x	java:S116"WRename this field "access_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(є«гУщяяяя8Йъ¦ЭЮ1
+q	java:S116"URename this field "token_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–«В8ЬЫЁЭЮ1
+y	java:S116	"XRename this field "refresh_token" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ХЭИюяяяя8мќ©ЭЮ1
+v	java:S116
+"URename this field "expires_in" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Тэьшшяяяя8МЧ©ЭЮ1
+„	java:S116"cRename this field "refresh_token_expires_in" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(бШ¦Фюяяяя8ЂАЄЭЮ1

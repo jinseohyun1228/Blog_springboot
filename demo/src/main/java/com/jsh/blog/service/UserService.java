@@ -23,6 +23,13 @@ public class UserService {
   @Autowired
   private BCryptPasswordEncoder encoder;
 
+  @Transactional
+  public User findUser(String username) {
+    User user = userRepository.findByUsername(username).orElseGet(()->{
+      return new User();
+    });
+    return user;
+  }
 
   @Transactional
   public void joinUser(User user) {
@@ -43,13 +50,10 @@ public class UserService {
               return new IllegalArgumentException("해당 회원이 없습니다.");
             });
     System.out.println("requestUser = getPassword " + requestUser.getPassword());
-    if (requestUser.getPassword() != null && !requestUser.getPassword().isEmpty()) {
-      System.out.println("changePassword o");
+    if ((principal.getOauth() == null && principal.getOauth().equals("")) && (requestUser.getPassword() != null && !requestUser.getPassword().isEmpty()) ) {
       String rowPassword = requestUser.getPassword();
       String encPassword = encoder.encode(rowPassword);
       principal.setPassword(encPassword);
-    }else {
-      System.out.println("changePassword X");
     }
 
     principal.setEmail(requestUser.getEmail());
