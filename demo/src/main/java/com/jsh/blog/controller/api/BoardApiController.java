@@ -1,6 +1,7 @@
 package com.jsh.blog.controller.api;
 
 import com.jsh.blog.config.auth.PrincipalDetail;
+import com.jsh.blog.dto.ReplySaveRequestDto;
 import com.jsh.blog.dto.ResponseDto;
 import com.jsh.blog.model.Board;
 import com.jsh.blog.model.Reply;
@@ -42,8 +43,9 @@ public class BoardApiController {
   }
 
   @PostMapping("/api/board/{boardId}/reply")
-  public ResponseDto<Integer> replySave(@PathVariable int boardId, @RequestBody Reply reply, @AuthenticationPrincipal PrincipalDetail principal) {
-    replyService.writeReply(principal.getUser(),boardId, reply);
+  public ResponseDto<Integer> replySave(@RequestBody ReplySaveRequestDto replySaveRequestDto) {
+    //데이터를 받을 때 컨트롤러에서 Dto를 만들어주는 것이 좋다만,
+    replyService.writeReply(replySaveRequestDto);
     return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 
   }
