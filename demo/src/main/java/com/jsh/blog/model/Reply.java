@@ -36,7 +36,7 @@ public class Reply {
   //댓글은 하나의 작성자를 가지고, 작성자는 여러개의 답변을 가질 수 있다.
   // -> 여러개의 댓글은 하나의 작성자를 가진다.
   @ManyToOne
-  @JoinColumn(name = "userID")
+  @JoinColumn(name = "userId")
   private User user;
 
   @CreationTimestamp

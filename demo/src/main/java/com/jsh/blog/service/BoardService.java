@@ -41,7 +41,7 @@ public class BoardService {
   public Board viewPostDetails(int id) {
     return boardRepository.findById(id)
             .orElseThrow(()->{
-              return new IllegalArgumentException("글 상세보기 실패: 아이디어를 찾을 수 없습니다.");
+              return new IllegalArgumentException("글 상세보기 실패: 아이디를 찾을 수 없습니다.");
             });
   }
 

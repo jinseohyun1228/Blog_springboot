@@ -3,8 +3,11 @@ package com.jsh.blog.controller.api;
 import com.jsh.blog.config.auth.PrincipalDetail;
 import com.jsh.blog.dto.ResponseDto;
 import com.jsh.blog.model.Board;
+import com.jsh.blog.model.Reply;
 import com.jsh.blog.model.User;
+import com.jsh.blog.repository.BoardRepository;
 import com.jsh.blog.service.BoardService;
+import com.jsh.blog.service.ReplyService;
 import com.jsh.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,6 +19,9 @@ public class BoardApiController {
 
   @Autowired
   private BoardService boardService;
+
+  @Autowired
+  private ReplyService replyService;
 
   @PostMapping("/api/board")
   public ResponseDto<Integer> save(@RequestBody Board board, @AuthenticationPrincipal PrincipalDetail principal) {
@@ -35,6 +41,12 @@ public class BoardApiController {
     return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
   }
 
+  @PostMapping("/api/board/{boardId}/reply")
+  public ResponseDto<Integer> replySave(@PathVariable int boardId, @RequestBody Reply reply, @AuthenticationPrincipal PrincipalDetail principal) {
+    replyService.writeReply(principal.getUser(),boardId, reply);
+    return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
+
+  }
 }
 
 

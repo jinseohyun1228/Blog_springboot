@@ -14,6 +14,12 @@ let index = {
             this.update();
         });
 
+        $("#btn-btn-save").on("click", () => {
+            this.replySave();
+        });
+
+
+
 
     },
 
@@ -76,6 +82,27 @@ let index = {
             alert(JSON.stringify(error));
         }); //ajax통신을 이용해서 3개의 데이터를 json으로 변경하여 insert요청하기
 
+    },
+    replySave: function () {
+        // alert("user의 save함수 호출");
+        let data = {
+            content:$("#reply-content").val()
+        };
+
+        let boardId = $("#boardId").val();
+
+        $.ajax({
+            type: "POST",
+            url: `/api/board/${boardId}/reply`,
+            data: JSON.stringify(data),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json"
+        }).done(function (resp) {   //성공시
+            alert("댓글작성이 완료되었습니다.");
+            location.href = `/board/${boardId}`;
+        }).fail(function (error) {   //실패시
+            alert(JSON.stringify(error));
+        }); //ajax통신을 이용해서 3개의 데이터를 json으로 변경하여 insert요청하기
     }
 
 };
