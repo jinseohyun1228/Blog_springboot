@@ -1,0 +1,20 @@
+
+j
+java:S2259n"HA "NullPointerException" could be thrown; "oauthToken" is nullable here.(¥»‡¢øÿÿÿÿ8ßÛÇÑà1
+m
+java:S2259Œ"JA "NullPointerException" could be thrown; "kakaoProfile" is nullable here.(ÓäÍ¨øÿÿÿÿ8àÛÇÑà1
+X	java:S1251"<This block of commented-out lines of code should be removed.(šÒœ±8ù©¡›à1
+W	java:S1257"<This block of commented-out lines of code should be removed.(š±J8ù©¡›à1
+X	java:S125="<This block of commented-out lines of code should be removed.(ˆœÑ‘8ú©¡›à1
+f
+java:S2147c"DCombine this catch with the one at line 97, which has the same body.(¢­§Œÿÿÿÿÿ8¨ª¡›à1
+>
+java:S1116o"Remove this empty statement.(Åñ­õşÿÿÿÿ8«ª¡›à1
+h
+java:S2147…"ECombine this catch with the one at line 131, which has the same body.(¢­§Œÿÿÿÿÿ8¬ª¡›à1
+U
+java:S1128"8Remove this unused import 'com.jsh.blog.model.RoleType'.(³ıø8›ÜÇÑà1
+s
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿ8›ÜÇÑà1
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8›ÜÇÑà1

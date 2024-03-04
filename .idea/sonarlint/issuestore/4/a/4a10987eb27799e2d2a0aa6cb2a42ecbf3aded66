@@ -1,0 +1,12 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(Ä®±úÿÿÿÿ8‰”ÌÃà1
+u
+java:S1602+"SRemove useless curly braces around statement and then remove useless return keyword(ƒ´æûÿÿÿÿ8ı«”äİ1
+u
+java:S16028"SRemove useless curly braces around statement and then remove useless return keyword(ƒ´æûÿÿÿÿ8¬”äİ1
+U
+java:S1128"8Remove this unused import 'com.jsh.blog.model.RoleType'.(³ıø8ƒ¬”äİ1
+
+java:S1128"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8ƒ¬”äİ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ƒ¬”äİ1

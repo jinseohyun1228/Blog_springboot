@@ -18,6 +18,10 @@ let index = {
             this.replySave();
         });
 
+        $("#btn-btn-delete").on("click", () => {
+            this.replyDelete();
+        });
+
 
 
 
@@ -83,6 +87,28 @@ let index = {
         }); //ajax통신을 이용해서 3개의 데이터를 json으로 변경하여 insert요청하기
 
     },
+
+    replyDelete: function () {
+
+        let boardId = $("#boardId").val();
+        let replyId = $(event.target).closest('li').find('#replyId').val();
+
+        alert("삭제글 id : " + boardId + " 삭제 댓글 id : " + replyId)
+        $.ajax({
+            type: "DELETE",
+            url: `/api/board/${boardId}/reply`,
+            data: JSON.stringify(replyId),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+        }).done(function (resp) {   //성공시
+            alert("댓글 삭제가 완료되었습니다.");
+            location.href = `/board/${boardId}`;
+        }).fail(function (error) {   //실패시
+            alert(JSON.stringify(error));
+        }); //ajax통신을 이용해서 3개의 데이터를 json으로 변경하여 insert요청하기
+
+    },
+
     replySave: function () {
         // alert("user의 save함수 호출");
         let data = {

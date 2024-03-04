@@ -100,7 +100,6 @@ public class UserController {
       e.printStackTrace();
     }
 
-    System.out.println("oauthToken = " + oauthToken.getAccess_token());
 
     //POST 방식으로 key = value 데이터를 요청 (Retrofit2, OkHttp)
     RestTemplate restTemplate2 = new RestTemplate();
@@ -129,7 +128,6 @@ public class UserController {
     KakaoProfile kakaoProfile = null;
     try {
       kakaoProfile = objectMapper2.readValue(kakaoProfileResponse.getBody(), KakaoProfile.class);
-      System.out.println("kakaoProfile = " + kakaoProfile);
     } catch (JsonMappingException e) {
       e.printStackTrace();
     } catch (JsonProcessingException e) {
@@ -145,13 +143,10 @@ public class UserController {
             .oauth("kakao")
             .build();
 
-    System.out.println("kakaoProfile.getProperties().getNickname() = " + kakaoProfile.getProperties().getNickname());
-    System.out.println("kakaoUser.getUsername() = " + kakaoUser.getUsername());
 
     User originUser = userService.findUser(kakaoUser.getUsername());
 
     if (originUser.getUsername() == null) {
-      System.out.println("i_am_a_new_member");
       userService.joinUser(kakaoUser);
     }
 

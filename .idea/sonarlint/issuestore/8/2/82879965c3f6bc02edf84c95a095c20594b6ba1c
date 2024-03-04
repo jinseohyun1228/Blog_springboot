@@ -1,0 +1,36 @@
+
+{
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(«å”¼úÿÿÿÿ8°¯¦ûİ1
+{
+java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(«å”¼úÿÿÿÿ8°¯¦ûİ1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÄÎòşÿÿÿÿ8¹¯¦ûİ1
+]
+java:S4684*"@Replace this persistent entity with a simple POJO or DTO object.(ó¢ªÒ8½¯¦ûİ1
+W	java:S125'"<This block of commented-out lines of code should be removed.(Ù–¯Q8½¯¦ûİ1
+W	java:S125+"<This block of commented-out lines of code should be removed.(èï·8†İ¼üİ1
+b
+java:S46841"@Replace this persistent entity with a simple POJO or DTO object.(ùøƒáüÿÿÿÿ8¿¯¦ûİ1
+]	java:S1254"<This block of commented-out lines of code should be removed.(Ù‡÷×şÿÿÿÿ8À¯¦ûİ1
+]	java:S125;"<This block of commented-out lines of code should be removed.(¶·½Âøÿÿÿÿ8À¯¦ûİ1
+\
+java:S1128"?Remove this unused import 'com.jsh.blog.config.SecurityConfig'.(¹§™8‰İ¼üİ1
+R
+java:S1128"5Remove this unused import 'com.jsh.blog.model.Board'.(èÛÂ¨8‰İ¼üİ1
+U
+java:S1128"8Remove this unused import 'com.jsh.blog.model.RoleType'.(³ıø8‰İ¼üİ1
+`
+java:S1128	">Remove this unused import 'com.jsh.blog.service.BoardService'.(½¤öÃùÿÿÿÿ8‰İ¼üİ1
+
+java:S1128"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ8‰İ¼üİ1
+j
+java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8‰İ¼üİ1
+x
+java:S1128"VRemove this unused import 'org.springframework.security.core.context.SecurityContext'.(ØıŞşÿÿÿÿ8‰İ¼üİ1
+y
+java:S1128"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë8‰İ¼üİ1
+s
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8‰İ¼üİ1
+
+java:S1128"]Remove this unused import 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder'.(åÅÚ…ûÿÿÿÿ8Šİ¼üİ1
+X
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8Šİ¼üİ1

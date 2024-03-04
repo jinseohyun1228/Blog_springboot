@@ -49,7 +49,6 @@ public class UserService {
             .orElseThrow(() -> {
               return new IllegalArgumentException("해당 회원이 없습니다.");
             });
-    System.out.println("requestUser = getPassword " + requestUser.getPassword());
     if ((principal.getOauth() == null && principal.getOauth().equals("")) && (requestUser.getPassword() != null && !requestUser.getPassword().isEmpty()) ) {
       String rowPassword = requestUser.getPassword();
       String encPassword = encoder.encode(rowPassword);
