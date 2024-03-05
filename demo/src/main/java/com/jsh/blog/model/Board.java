@@ -46,7 +46,7 @@ public class Board {
   //하나의 게시물은 여러개의 답변을 가질 수 있다.
   // mappedBy -> 연관관계의 주인이 아니다. FK가 아니고, 이것을 DB의 속성으로 만들지마세요
   //fetch전략 EAGER - 매번들고오기
-  @OneToMany(mappedBy = "board" , fetch = FetchType.EAGER)
+  @OneToMany(mappedBy = "board" , fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
   @JsonIgnoreProperties({"board"}) //요기 안에서 board에 대한 getter 호출을 하지 않는다.
   @OrderBy("id desc") //오름차순
   private List<Reply> reply;

@@ -1,19 +1,0 @@
-
-u
-java:S1602"SRemove useless curly braces around statement and then remove useless return keyword(ó€»Šşÿÿÿÿ8ÉÓñ›à1
-X
-java:S1612"6Replace this lambda with method reference 'User::new'.(ó€»Šşÿÿÿÿ8ÉÓñ›à1
-u
-java:S16021"SRemove useless curly braces around statement and then remove useless return keyword(ƒ´æûÿÿÿÿ8ÍÓñ›à1
-]	java:S125C"<This block of commented-out lines of code should be removed.(Æ”ÄĞøÿÿÿÿ8ÔÓñ›à1
-R
-java:S1128"5Remove this unused import 'com.jsh.blog.model.Board'.(èÛÂ¨8ÔÓñ›à1
-€
-java:S1128	"^Remove this unused import 'org.springframework.security.authentication.AuthenticationManager'.(ğş–şÿÿÿÿ8ÔÓñ›à1
-
-java:S1128
-"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ8ÔÓñ›à1
-j
-java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8ÔÓñ›à1
-y
-java:S1128"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë8ÔÓñ›à1

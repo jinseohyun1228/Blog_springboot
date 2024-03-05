@@ -2,6 +2,7 @@ package com.jsh.blog.controller;
 
 import com.jsh.blog.config.auth.PrincipalDetail;
 import com.jsh.blog.service.BoardService;
+import lombok.RequiredArgsConstructor;
 import net.bytebuddy.TypeCache;
 import org.assertj.core.internal.bytebuddy.dynamic.scaffold.TypeWriter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 public class BoardController {
-
 
   @Autowired
   private BoardService boardService;
