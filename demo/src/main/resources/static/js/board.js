@@ -88,16 +88,11 @@ let index = {
 
     },
 
-    replyDelete: function () {
+    replyDelete: function (boardId, replyId) {
 
-        let boardId = $("#boardId").val();
-        let replyId = $(event.target).closest('li').find('#replyId').val();
-
-        alert("삭제글 id : " + boardId + " 삭제 댓글 id : " + replyId)
         $.ajax({
             type: "DELETE",
-            url: `/api/board/${boardId}/reply`,
-            data: JSON.stringify(replyId),
+            url: `/api/board/${boardId}/reply/${replyId}`,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
         }).done(function (resp) {   //성공시
