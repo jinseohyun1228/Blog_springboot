@@ -87,13 +87,10 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.22</version>
 		</dependency>
-<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-=======
->>>>>>> 029a80a9302d32cd0a7e079e35f4567a4b145872
 	</dependencies>
 
 	<build>

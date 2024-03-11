@@ -7,18 +7,18 @@
 ***
 ### 🖥️ 구현 화면
 #### 메인화면
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 #### 회원가입
-![img_5.png](img_5.png)
+![  img_5.png](img/img_5.png)
 #### 로그인
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 #### 카카오 로그인
-![img_6.png](img_6.png)
+![img_6.png](img/img_6.png)
 #### 로그인 시 이용 가능한 글 쓰기
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 #### 댓글 보기와 작성자에 다른 댓글, 글 삭제 권한
-![img_1.png](img_1.png)
-![img.png](img.png)
+![img_1.png](img/img_1.png)
+![img.png](img/img.png)
 ***
 
 ## 구현을 하면서 얻을 수 있었던 점
